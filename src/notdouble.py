@@ -18,11 +18,5 @@ def main():
     
     fileOut.close()
 
-    kfold = KFold(10, True, 1)
-    for train, test in kfold.split(filenotdouble):
-        print('train: %d, test: %d' % (len(filenotdouble[train]), len(filenotdouble[test])))
-
-
-
 if __name__ == '__main__':
 	main()
